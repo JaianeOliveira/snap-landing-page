@@ -37,3 +37,5 @@ const sideMenu = document.querySelector('.side-nav');
 const showSideMenu = () => (sideMenu.style.right = '0');
 const hideSideMenu = () =>
 	(sideMenu.style.right = `-${sideMenu.clientWidth + 30}px`);
+
+document.addEventListener('load', () => hideSideMenu());
