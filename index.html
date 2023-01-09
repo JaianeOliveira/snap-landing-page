@@ -17,10 +17,168 @@
 			href="assets/favicon-32x32.png"
 			type="image/x-icon"
 		/>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="css/style.css" />
 		<script src="./index.js" defer></script>
 
 		<title>Snap - Make Remote Work</title>
 	</head>
-	<body></body>
+	<body>
+		<div class="side-nav">
+			<div>
+				<button onclick="hideSideMenu()">
+					<img src="assets/icon-close-menu.svg" alt="close" />
+				</button>
+			</div>
+			<nav>
+				<div class="menu-item expansible">
+					<div class="expansible-display">
+						<span>Features</span>
+						<img
+							class="dropdown-arrow"
+							src="assets/icon-arrow-down.svg"
+							alt="arrow-down"
+						/>
+					</div>
+					<div class="expansible-content">
+						<a href="#" class="menu-item">
+							<img src="assets/icon-todo.svg" alt="to do list icon" />
+							<span>Todo List</span></a
+						>
+						<a href="#" class="menu-item">
+							<img src="assets/icon-calendar.svg" alt="calendar icon" />
+							<span>Calendar</span></a
+						>
+						<a href="#" class="menu-item">
+							<img src="assets/icon-reminders.svg" alt="reminder icon" />
+							<span>Reminders</span>
+						</a>
+						<a href="#" class="menu-item">
+							<img src="assets/icon-planning.svg" alt="planning icon" />
+							<span>Planning</span>
+						</a>
+					</div>
+				</div>
+				<div class="menu-item expansible">
+					<div class="expansible-display">
+						<span>Company</span>
+						<img
+							class="dropdown-arrow"
+							src="assets/icon-arrow-down.svg"
+							alt=""
+						/>
+					</div>
+					<div class="expansible-content">
+						<a href="#" class="menu-item">History</a>
+						<a href="#" class="menu-item">Our Team</a>
+						<a href="#" class="menu-item">Blog</a>
+					</div>
+				</div>
+				<div class="menu-item"><a href="#">Careers</a></div>
+				<div class="menu-item"><a href="#">About</a></div>
+			</nav>
+
+			<nav>
+				<div class="menu-item">
+					<a href="#">Login</a>
+				</div>
+				<div class="menu-item">
+					<a href="#">Register</a>
+				</div>
+			</nav>
+		</div>
+
+		<header class="desktop-header">
+			<h2>Snap</h2>
+			<nav>
+				<div class="dropdown">
+					<div class="dropdown-display">
+						<span>Features</span>
+						<img
+							class="dropdown-arrow"
+							src="assets/icon-arrow-down.svg"
+							alt="arrow-down"
+						/>
+					</div>
+					<div class="dropdown-content-container">
+						<div class="dropdown-content">
+							<a href="#">
+								<img src="assets/icon-todo.svg" alt="to do list icon" />
+								<span>Todo List</span></a
+							>
+							<a href="#">
+								<img src="assets/icon-calendar.svg" alt="calendar icon" />
+								<span>Calendar</span></a
+							>
+							<a href="#">
+								<img src="assets/icon-reminders.svg" alt="reminder icon" />
+								<span>Reminders</span>
+							</a>
+							<a href="#">
+								<img src="assets/icon-planning.svg" alt="planning icon" />
+								<span>Planning</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="dropdown-display">
+						<span>Company</span>
+						<img
+							class="dropdown-arrow"
+							src="assets/icon-arrow-down.svg"
+							alt=""
+						/>
+					</div>
+					<div class="dropdown-content-container">
+						<div class="dropdown-content">
+							<a href="#">History</a>
+							<a href="#">Our Team</a>
+							<a href="#">Blog</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<a href="#">Careers</a>
+				</div>
+
+				<div><a href="#">About</a></div>
+			</nav>
+
+			<nav>
+				<a href="#">Login</a>
+				<a href="#">Register</a>
+			</nav>
+		</header>
+		<header class="mobile-header">
+			<h2>snap</h2>
+			<button onclick="showSideMenu()">
+				<img src="assets/icon-menu.svg" />
+			</button>
+		</header>
+
+		<main>
+			<section class="content">
+				<h1>Make remote work</h1>
+				<p>
+					Get your team in sync, no matter your location. Streamline processes,
+					create team rituals, and watch productivity soar.
+				</p>
+
+				<a href="#">Learn more</a>
+
+				<footer>
+					<img src="assets/client-databiz.svg" alt="databiz logo" />
+					<img src="assets/client-audiophile.svg" alt="audio phile logo" />
+					<img src="assets/client-meet.svg" alt="meet logo" />
+					<img src="assets/client-maker.svg" alt="maker logo" />
+				</footer>
+			</section>
+			<section class="hero">
+				<img src="assets/image-hero-desktop.png" alt="hero-desktop" />
+				<img src="assets/image-hero-mobile.png" alt="hero-mobile" />
+			</section>
+		</main>
+	</body>
 </html>
